@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giusy Grieco — Il tuo percorso c’è. Va solo raccontato.</title>
+<meta name="description" content="Revisione CV e strategia di candidatura per profili creativi, culturali e non lineari. Napoli, Bologna e da remoto.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='5' y='3' width='22' height='26' rx='3' fill='%23FFFFFF' stroke='%231E1A2B' stroke-width='2'/><path d='M9 12h14M9 17h9' stroke='%23D7263D' stroke-width='2.5' stroke-linecap='round'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;
+  --lilac:#F1EEF8;       /* fondo delle sezioni */
+  --ink:#1E1A2B;         /* inchiostro */
+  --ink-soft:#4E4862;
+  --pen:#D7263D;         /* penna rossa di revisione */
+  --marker:#C8F169;      /* evidenziatore */
+  --line:#DCD6EA;
+  --serif:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans:"Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --hand:"Caveat", "Segoe Print", "Bradley Hand", cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6}
+a{color:var(--ink)}
+:focus-visible{outline:3px solid var(--pen);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+h1,h2,h3{margin:0;font-weight:400;line-height:1.02}
+h1{font-family:var(--serif);font-size:clamp(52px,8vw,108px);letter-spacing:-0.02em}
+h2{font-family:var(--serif);font-size:clamp(40px,5.2vw,68px);letter-spacing:-0.015em}
+h3{font-family:var(--sans);font-weight:700;font-size:22px;line-height:1.25}
+p{margin:0}
+.lead{font-size:clamp(19px,2vw,22px);color:var(--ink-soft);max-width:58ch}
+.mark{background:linear-gradient(transparent 55%,var(--marker) 55%);padding:0 .08em}
+.hand{font-family:var(--hand);color:var(--pen);font-size:26px;line-height:1.1}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:17px;border:2px solid var(--ink)}
+.btn svg{width:20px;height:20px}
+.btn-solid{background:var(--ink);color:#FFFFFF}
+.btn-solid:hover{background:var(--pen);border-color:var(--pen);color:#FFFFFF}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#FFFFFF}
+section{padding:96px 0}
+.head{display:flex;flex-direction:column;gap:18px;margin-bottom:48px;max-width:780px}
+
+/* top */
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px 0;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-size:28px;text-decoration:none}
+.nav{display:flex;gap:24px;flex-wrap:wrap}
+.nav a{text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:var(--pen)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:center;padding:48px 0 96px}
+.hero .lead{margin-top:28px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.where{margin-top:26px;font-weight:600;font-size:16px;display:flex;gap:10px;align-items:center}
+.where svg{width:20px;height:20px;color:var(--pen)}
+
+/* the annotated CV: the memorable element */
+.sheet{position:relative;background:#FFFFFF;border:2px solid var(--ink);border-radius:6px;padding:34px 30px 30px;box-shadow:14px 14px 0 var(--lilac);transform:rotate(1.2deg)}
+.sheet .nm{font-family:var(--serif);font-size:30px}
+.sheet .ln{height:10px;border-radius:5px;background:var(--line);margin:12px 0}
+.sheet .ln.s{width:55%}.sheet .ln.m{width:78%}
+.sheet .blk{font-size:15px;color:var(--ink-soft);margin-top:14px;position:relative}
+.strike{text-decoration:line-through;text-decoration-color:var(--pen);text-decoration-thickness:2.5px}
+.note{position:absolute;font-family:var(--hand);color:var(--pen);font-size:25px;line-height:1;white-space:nowrap}
+.circle{position:absolute;border:2.5px solid var(--pen);border-radius:50%}
+.arrow{position:absolute;overflow:visible}
+
+/* before / after */
+.ba{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:start}
+.toggle{align-self:flex-start;display:inline-flex;border:2px solid var(--ink);border-radius:999px;padding:4px;gap:4px;margin-top:8px}
+.toggle button{font:inherit;font-weight:700;font-size:16px;min-height:44px;padding:0 22px;border-radius:999px;border:none;background:transparent;color:var(--ink);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:#FFFFFF}
+.card{background:#FFFFFF;border:2px solid var(--ink);border-radius:10px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.card .tag{align-self:flex-start;font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px}
+.card .role{font-family:var(--serif);font-size:30px;line-height:1.1}
+.card ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.card .why{border-top:1px dashed var(--line);padding-top:14px}
+.small{font-size:15px;color:var(--ink-soft)}
+[hidden]{display:none!important}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;left:10%;right:10%;top:36px;border-top:3px dashed var(--pen)}
+.step{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;padding:0 12px}
+.step > div{display:flex;flex-direction:column;gap:8px;align-items:center}
+.step .num{width:72px;height:72px;border-radius:50%;background:#FFFFFF;border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:36px;position:relative;z-index:1}
+.step:last-child .num{background:var(--marker)}
+.step h3{font-size:19px}
+.step p{font-size:16px;color:var(--ink-soft)}
+.step .get{font-family:var(--hand);color:var(--pen);font-size:22px;line-height:1.1}
+
+/* cities */
+.cities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.city{border-radius:14px;padding:34px;display:flex;flex-direction:column;gap:18px;background:#FFFFFF;border:2px solid var(--ink)}
+.city .name{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.city .name h3{font-family:var(--serif);font-weight:400;font-size:52px;line-height:1}
+.city ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.city li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;align-items:start}
+.city li svg{width:26px;height:26px;color:var(--pen);margin-top:2px}
+
+/* path */
+.path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;align-items:start}
+.barwrap{height:180px;display:flex;flex-direction:column;justify-content:flex-end}
+.stop{display:flex;flex-direction:column;gap:10px}
+.stop .bar{border-radius:8px 8px 0 0;background:var(--ink)}
+.stop:nth-child(odd) .bar{background:var(--pen)}
+.stop b{font-size:17px;line-height:1.3}
+.stop span{font-size:15px;color:var(--ink-soft)}
+
+/* who */
+.who{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.who-card{background:#FFFFFF;border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:12px;border:2px solid var(--ink)}
+.who-card svg{width:44px;height:44px}
+.who-card p{font-size:16px;color:var(--ink-soft)}
+
+/* take home */
+.take{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.doc{display:flex;flex-direction:column;gap:14px}
+.doc .paper{aspect-ratio:4/3;background:#FFFFFF;border:2px solid var(--ink);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:8px;box-shadow:8px 8px 0 var(--lilac)}
+.doc .paper i{display:block;height:8px;border-radius:4px;background:var(--line)}
+.doc .paper i.h{height:14px;width:60%;background:var(--ink)}
+.doc .paper i.r{background:var(--pen);width:40%}
+.doc .paper i.g{background:var(--marker);width:70%}
+.doc p{font-size:16px;color:var(--ink-soft)}
+
+/* formats */
+.formats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.format{border-radius:14px;padding:32px;background:var(--ink);color:#FFFFFF;display:flex;flex-direction:column;gap:14px}
+.format p{color:#D9D4E8;font-size:17px}
+.format a{color:var(--marker)}
+
+/* download */
+.dl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center;border:3px solid var(--ink);border-radius:18px;padding:48px;background:var(--marker)}
+.dl p{margin-top:14px;max-width:52ch}
+.dl-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+
+footer{padding:80px 0 72px}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-end}
+.contacts{display:flex;flex-direction:column;gap:10px;font-weight:600}
+.contacts a{text-decoration:none;display:inline-flex;gap:10px;align-items:center}
+.contacts svg{width:20px;height:20px;color:var(--pen)}
+
+.band{background:var(--lilac)}
+
+@media (max-width:960px){
+  .hero,.ba{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .steps::before{left:36px;right:auto;top:20px;bottom:20px;border-top:none;border-left:3px dashed var(--pen)}
+  .step{flex-direction:row;align-items:flex-start;text-align:left;gap:20px}
+  .step > div{align-items:flex-start}
+  .step .num{flex-shrink:0}
+  .cities,.formats{grid-template-columns:1fr}
+  .who,.take{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .path{grid-template-columns:1fr;gap:18px}
+  .barwrap{display:none}
+  .dl{grid-template-columns:1fr;padding:32px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 20px}
+  .nav{display:none}
+  .who,.take{grid-template-columns:1fr}
+  .sheet{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.5-.8 1.5-1.5 0-1.3-1.2-1.6-1.2-2.8 0-.9.7-1.4 1.6-1.4H16a5 5 0 0 0 5-5C21 6.3 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7" r="1.2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></symbol>
+    <symbol id="i-switch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3M20 17H7l3 3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Giusy Grieco</a>
+    <nav class="nav" aria-label="Sezioni">
+      <a href="#prima-dopo">Prima e dopo</a>
+      <a href="#metodo">Metodo</a>
+      <a href="#territorio">Napoli e Bologna</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </header>
+
+  <main id="top" class="hero">
+    <div>
+      <h1>Il tuo percorso c’è. <span class="mark">Va solo raccontato.</span></h1>
+      <p class="lead">Rivedo CV e candidature per lavoro, per profili creativi, culturali e non lineari. Ti aiuto a scegliere chi essere per ogni annuncio, e a dirlo in modo che arrivi a chi seleziona.</p>
+      <p class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Napoli, Bologna e da remoto</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#metodo">Scopri il metodo</a>
+        <a class="btn btn-line" href="assets/Giusy_Grieco_CV.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg>Scarica il mio CV</a>
+      </div>
+    </div>
+
+    <figure class="sheet" aria-label="Un CV corretto a penna rossa: il metodo in un’immagine" style="margin:0">
+      <div class="nm">Nome Cognome</div>
+      <div class="ln m"></div>
+      <p class="blk"><span class="strike">Persona dinamica, creativa e motivata, con esperienza in vari ambiti</span></p>
+      <div class="ln"></div><div class="ln m"></div><div class="ln s"></div>
+      <p class="blk" style="margin-top:22px"><b>Esperienze</b></p>
+      <div class="ln"></div><div class="ln s"></div><div class="ln m"></div><div class="ln"></div>
+      <span class="note" style="right:18px;top:62px">chi legge?</span>
+      <span class="note" style="right:24px;top:236px">una sola storia</span>
+      <svg class="arrow" style="right:170px;top:244px" width="62" height="22" aria-hidden="true"><path d="M58 12 C 40 2, 20 2, 4 10" fill="none" stroke="#D7263D" stroke-width="2.5" stroke-linecap="round"/><path d="M11 4 L3 10 L11 16" fill="none" stroke="#D7263D" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span class="note" style="left:30px;bottom:18px">e la prova?</span>
+    </figure>
+  </main>
+</div>
+
+<!-- BEFORE / AFTER -->
+<section id="prima-dopo" class="band">
+  <div class="wrap ba">
+    <div class="head" style="margin-bottom:0">
+      <h2>Prima e dopo</h2>
+      <p class="lead">Lo stesso percorso, raccontato in due modi. Cambia solo la scelta di cosa far vedere.</p>
+      <div class="toggle" role="group" aria-label="Mostra la versione">
+        <button type="button" id="bBefore" aria-pressed="true">Prima</button>
+        <button type="button" id="bAfter" aria-pressed="false">Dopo</button>
+      </div>
+      <p class="small">Esempio illustrativo, costruito per mostrare il metodo.</p>
+    </div>
+
+    <div>
+      <article class="card" id="before">
+        <span class="tag" style="background:#FBE3E6;color:#9E1428">Prima</span>
+        <div class="role">Persona dinamica e creativa</div>
+        <p>Diplomata in Accademia, con esperienza in vari ambiti: grafica, eventi, social media, cameriera, laboratori per bambini, fotografia.</p>
+        <ul>
+          <li>Ottime capacità comunicative e di problem solving</li>
+          <li>Conoscenza pacchetto Office e Adobe</li>
+          <li>Disponibile, flessibile, proattiva</li>
+        </ul>
+        <p class="why small">Tutto dentro, niente scelto. Chi legge non capisce per quale ruolo candidarla.</p>
+      </article>
+
+      <article class="card" id="after" hidden>
+        <span class="tag" style="background:var(--marker);color:var(--ink)">Dopo</span>
+        <div class="role">Educatrice museale e progettista di laboratori per l’infanzia</div>
+        <p>Formazione artistica in Accademia; progetto e conduco laboratori per bambini e famiglie, e documento le attività con fotografia e contenuti social.</p>
+        <ul>
+          <li>Laboratori progettati e condotti per gruppi di bambini</li>
+          <li>Documentazione fotografica e contenuti per la comunicazione delle attività</li>
+          <li>Grafica di materiali didattici con Adobe</li>
+        </ul>
+        <p class="why small">Un solo posizionamento, le parole dell’annuncio, ogni esperienza messa al servizio di quel ruolo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section id="metodo">
+  <div class="wrap">
+    <div class="head">
+      <h2>Il metodo, in cinque passaggi</h2>
+      <p class="lead">L’ho costruito per riscrivere il mio percorso, e lo uso a Bologna con le persone che accompagno.</p>
+    </div>
+    <ol class="steps" style="list-style:none;margin:0;padding:0">
+      <li class="step"><span class="num" aria-hidden="true">1</span><div><h3>Leggiamo l’offerta</h3><p>Cosa è eliminatorio, cosa è trattabile, le parole esatte da riusare, chi legge per primo.</p><span class="get">capisci cosa chiedono davvero</span></div></li>
+      <li class="step"><span class="num" aria-hidden="true">2</span><div><h3>Scegliamo chi sei per quell’annuncio</h3><p>Un solo posizionamento, non un collage di esperienze.</p><span class="get">una sola storia</span></div></li>
+      <li class="step"><span class="num" aria-hidden="true">3</span><div><h3>Una prova per ogni requisito</h3><p>Ogni richiesta punta a un fatto del tuo percorso. Dove manca, lo diciamo con onestà.</p><span class="get">niente di inventato</span></div></li>
+      <li class="step"><span class="num" aria-hidden="true">4</span><div><h3>Riscriviamo il CV</h3><p>Una pagina, verbi ed esiti, leggibile da una persona e dai sistemi di selezione automatica.</p><span class="get">un CV che passa i filtri</span></div></li>
+      <li class="step"><span class="num" aria-hidden="true">5</span><div><h3>Una lettera che si ricorda</h3><p>Poche frasi: la prova più forte, il ponte con il ruolo, il punto debole senza scuse.</p><span class="get">e si fa ricordare</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- WHERE -->
+<section id="territorio" class="band">
+  <div class="wrap">
+    <div class="head">
+      <h2>Napoli e Bologna</h2>
+      <p class="lead">Due città, un lavoro: aiutare persone del territorio a candidarsi a posizioni creative, e non solo.</p>
+    </div>
+    <div class="cities">
+      <article class="city">
+        <div class="name"><h3>Napoli</h3><span class="hand">dove ho iniziato</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Mi sono formata in <b>New Media Art</b> all’Accademia di Belle Arti.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Ho lavorato al city brand <b>Cuore di Napoli</b>, sia sul copy sia sull’identità visiva: raccontare un territorio in poche parole e un segno.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Ho aiutato persone del territorio a costruire CV e candidature per <b>posizioni creative</b>.</span></li>
+        </ul>
+      </article>
+      <article class="city">
+        <div class="name"><h3>Bologna</h3><span class="hand">dove è nato il metodo</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Ho studiato <b>Digital Humanities</b> all’Università di Bologna.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Qui ho messo a punto e applico il mio <b>metodo di candidatura</b>, dal primo annuncio alla lettera.</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Accompagno persone su <b>posizioni creative e culturali</b>, e su profili di altri settori.</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section>
+  <div class="wrap">
+    <div class="head">
+      <h2>Perché io</h2>
+      <p class="lead">Perché mi sono dovuta riscrivere da capo più volte. Ogni cambio di strada è stato un CV nuovo.</p>
+    </div>
+    <div class="path" role="list">
+      <div class="stop" role="listitem"><div class="barwrap"><div class="bar" style="height:60px"></div></div><b>New Media Art</b><span>Accademia di Belle Arti di Napoli</span></div>
+      <div class="stop" role="listitem"><div class="barwrap"><div class="bar" style="height:90px"></div></div><b>Cuore di Napoli</b><span>City brand, copy e identità</span></div>
+      <div class="stop" role="listitem"><div class="barwrap"><div class="bar" style="height:120px"></div></div><b>Berlino</b><span>Ricerca urbana tradotta per pubblici ampi</span></div>
+      <div class="stop" role="listitem"><div class="barwrap"><div class="bar" style="height:150px"></div></div><b>Horizon Europe</b><span>Work Package Lead, 9 partner europei</span></div>
+      <div class="stop" role="listitem"><div class="barwrap"><div class="bar" style="height:180px"></div></div><b>Dati e governance</b><span>In azienda, tra team tecnici e business</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="band">
+  <div class="wrap">
+    <div class="head"><h2>Con chi lavoro</h2></div>
+    <div class="who">
+      <div class="who-card"><svg aria-hidden="true" style="color:var(--pen)"><use href="#i-cap"/></svg><h3>Chi esce da un’accademia o dall’università</h3><p>Primo CV vero, prime candidature, tanti progetti da ordinare.</p></div>
+      <div class="who-card"><svg aria-hidden="true" style="color:var(--pen)"><use href="#i-palette"/></svg><h3>Artisti e creativi</h3><p>Percorsi fatti di progetti, collaborazioni e lavori paralleli.</p></div>
+      <div class="who-card"><svg aria-hidden="true" style="color:var(--pen)"><use href="#i-switch"/></svg><h3>Chi cambia settore</h3><p>Esperienze vere che vanno ritradotte per un mondo nuovo.</p></div>
+      <div class="who-card"><svg aria-hidden="true" style="color:var(--pen)"><use href="#i-star"/></svg><h3>Profili non lineari</h3><p>Chi ha fatto molte cose e deve sceglierne una da far vedere.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TAKE HOME -->
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Cosa ti porti a casa</h2></div>
+    <div class="take">
+      <div class="doc"><div class="paper" aria-hidden="true"><i class="h"></i><i></i><i></i><i class="g"></i><i></i><i></i><i></i><i class="g"></i><i></i></div><h3>Profilo di base</h3><p>Il tuo percorso completo e ordinato, da cui partire per ogni candidatura.</p></div>
+      <div class="doc"><div class="paper" aria-hidden="true"><i class="h"></i><i></i><i class="r"></i><i></i><i></i><i class="r"></i><i></i><i></i></div><h3>CV su misura</h3><p>Per l’offerta su cui lavoriamo, in una pagina.</p></div>
+      <div class="doc"><div class="paper" aria-hidden="true"><i class="h"></i><i></i><i></i><i></i><i style="width:50%"></i></div><h3>Lettera breve</h3><p>Poche frasi che si fanno ricordare.</p></div>
+      <div class="doc"><div class="paper" aria-hidden="true"><i class="h"></i><i class="g"></i><i></i><i class="r"></i><i></i><i class="g"></i></div><h3>Un modo di leggere gli annunci</h3><p>Da usare da sola o da solo, la volta dopo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="band">
+  <div class="wrap">
+    <div class="head"><h2>Due formati</h2></div>
+    <div class="formats">
+      <article class="format">
+        <h3 style="font-family:var(--serif);font-weight:400;font-size:40px">Percorso individuale</h3>
+        <p>Si lavora su di te e su un’offerta reale: lettura dell’annuncio, posizionamento, CV e lettera. Online o in presenza.</p>
+      </article>
+      <article class="format">
+        <h3 style="font-family:var(--serif);font-weight:400;font-size:40px">Laboratorio di gruppo</h3>
+        <p>Il metodo per piccoli gruppi, con esercizi su annunci veri. Progetto laboratori per adulti da tempo: un esempio aperto è <a href="https://github.com/teragramgius/ai-ethics-workplace-workshop" target="_blank" rel="noopener">AI Ethics in the Workplace</a>, 4 moduli con guida per facilitatori.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CV DOWNLOAD -->
+<section id="cv">
+  <div class="wrap">
+    <div class="dl">
+      <div>
+        <h2>Il mio CV</h2>
+        <p>Scritto con lo stesso metodo che uso con le persone che accompagno. Una pagina, in italiano.</p>
+        <div class="dl-actions">
+          <a class="btn btn-solid" href="assets/Giusy_Grieco_CV.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg>Scarica il CV (PDF)</a>
+          <a class="btn btn-line" href="assets/Giusy_Grieco_Come_lavoro.pdf" download><svg aria-hidden="true"><use href="#i-download"/></svg>Scarica “Come lavoro”</a>
+          <a class="btn btn-line" href="assets/Giusy_Grieco_CV.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-eye"/></svg>Apri il CV nel browser</a>
+        </div>
+      </div>
+      <p class="hand" style="font-size:34px;max-width:12ch;margin:0">lo stesso metodo, applicato a me</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <h2 style="max-width:13ch">Portami il tuo CV. Partiamo da lì.</h2>
+    <div class="contacts">
+      <a href="mailto:giusygrieco@proton.me"><svg aria-hidden="true"><use href="#i-mail"/></svg>giusygrieco@proton.me</a>
+      <a href="tel:+393396187260"><svg aria-hidden="true"><use href="#i-phone"/></svg>+39 339 618 7260</a>
+      <a href="https://linkedin.com/in/giusy-grieco-101612202" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-link"/></svg>LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const bB = document.getElementById('bBefore'), bA = document.getElementById('bAfter');
+  const before = document.getElementById('before'), after = document.getElementById('after');
+  function set(showAfter) {
+    after.hidden = !showAfter; before.hidden = showAfter;
+    bA.setAttribute('aria-pressed', String(showAfter));
+    bB.setAttribute('aria-pressed', String(!showAfter));
+  }
+  bB.addEventListener('click', () => set(false));
+  bA.addEventListener('click', () => set(true));
+})();
+</script>
+</body>
+</html>
